@@ -1,7 +1,7 @@
 diabetes:
   model_type: svc
   params:
-    c: 1.0
+    C: 1.0
     gamma: scale
     class_weight: balanced  
 
