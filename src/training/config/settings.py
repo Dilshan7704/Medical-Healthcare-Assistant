@@ -12,3 +12,8 @@ class Settings(BaseSettings):
    random_state: int
    hyper_params_yaml_path: str
    
+   class Config:
+      env_file = ".env"
+      env_file_encoding = "utf-8"
+      extra = "allow"
+      
