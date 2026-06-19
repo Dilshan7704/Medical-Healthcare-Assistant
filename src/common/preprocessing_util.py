@@ -1,0 +1,11 @@
+import numpy as np
+
+def replace_zeros_with_mean(X):
+    X=X.copy() 
+    cols = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
+    for col in cols:
+        if col in X.columns:
+            X[col]= X[col].replace(0, np.nan)
+    return X
+
+   
